@@ -36,8 +36,27 @@
     }
 
     .content { width: 65%; display: flex; flex-direction: column; gap: 20px; }
-    .download-link { display: inline-block; vertical-align: middle; }
-    .download-link img { height: 40px; }
+    
+    /* Contenedor y estilo de los nuevos botones R2 */
+    .download-buttons { display: flex; flex-direction: column; gap: 12px; max-width: 280px; margin-top: 5px; }
+    .btn-r2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      border: 2px solid black;
+      text-shadow: 1px 1px 0px #000;
+      transition: transform 0.1s ease;
+    }
+    .btn-r2:active { transform: scale(0.97); }
+    .btn-win { background: #00aa00; } /* Verde para Windows */
+    .btn-apk { background: #aa00aa; } /* Morado para Android */
+
+    .requirements { font-size: 13px; color: #444; margin-top: 5px; line-height: 1.4; }
 
     .social-box {
       width: 30%;
@@ -97,11 +116,17 @@
     <main>
       <div class="content">
         <h2>DOWNLOAD GAME</h2>
-        <p>click the button below to download mental miserably:</p>
-        <p>
-          <a href="Mental Miserably.zip" class="download-link"><img src="images/coooldownloadbutton.png" alt="DOWNLOAD"></a>
-        </p>
-        <p>system requirements: Windows 10/11</p>
+        <p>click a button below to download mental miserably for your platform:</p>
+        
+        <div class="download-buttons">
+          <a href="https://mentalmiserably.com" class="btn-r2 btn-win">DOWNLOAD FOR PC (.RAR)</a>
+          <a href="https://mentalmiserably.com" class="btn-r2 btn-apk">DOWNLOAD FOR MOBILE (.APK)</a>
+        </div>
+
+        <div class="requirements">
+          <p>• system requirements (PC): Windows 10/11</p>
+          <p>• system requirements (Mobile): Android 8.0 or higher</p>
+        </div>
       </div>
 
       <div class="social-box">
