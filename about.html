@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>MENTAL MISERABLY ABOUT</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { background-color: #00e5ff; }
+
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    .header-left { display: flex; align-items: center; gap: 15px; }
+    .header-left img { height: 60px; }
+    .header-right img { height: 70px; }
+    .logo { font-size: 24px; font-weight: bold; line-height: 1; }
+    .subtext { font-size: 10px; color: #555; }
+
+    .container { display: flex; padding: 20px; gap: 20px; }
+
+    nav { display: flex; flex-direction: column; gap: 15px; width: 120px; }
+    nav a { color: #0055ff; font-style: italic; font-weight: bold; text-decoration: underline; }
+
+    main {
+      flex: 1;
+      background: white;
+      border: 3px solid black;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+    }
+
+    .content { width: 65%; display: flex; flex-direction: column; gap: 20px; }
+
+    .social-box {
+      width: 30%;
+      border: 2px solid black;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+
+    .social-btn {
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .youtube { background: red; }
+    .tiktok  { background: black; }
+    .discord { background: #3000ff; }
+    .blog    { background: #ff6600; }
+
+    .footer-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <img src="images/logo-left.png" alt="Personaje Izquierda">
+      <div>
+        <div class="logo">MENTAL<br>MISERABLY</div>
+        <div class="subtext">.nekoweb.org</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <img src="images/top-right.png" alt="Personaje Derecha">
+    </div>
+  </header>
+
+  <div class="container">
+    <nav>
+      <a href="index.html">welcome</a>
+      <a href="download.html">download</a>
+      <a href="about.html">about</a>
+      <a href="gallery.html">gallery</a>
+    </nav>
+
+    <main>
+      <div class="content">
+        <h2>ABOUT THE CREATOR & GAME</h2>
+        <p>mental miserably tells the story of a kid who loses his mind due to severe cyberbullying. worried for his well-being, his parents send him to a psychiatric hospital to get better.</p>
+        <p>everything you experience inside the game represents his hallucinations while staying at the facility.</p>
+        <p>created by: martin aka echotophat</p>
+        <p>the game for now its on demo, so expect bugs and allat</p>
+      </div>
+
+      <div class="social-box">
+        <a href="https://www.youtube.com/@echotophat" target="_blank" class="social-btn youtube">youtube</a>
+        <a href="https://www.tiktok.com/@echotophat" target="_blank" class="social-btn tiktok">tiktok</a>
+        <a href="https://discord.gg/tDxdAJMf8R" target="_blank" class="social-btn discord">discord</a>
+        <a href="blog.html" class="social-btn blog">blog</a>
+        
+        <div class="footer-text">
+          <span>im a tuff guy</span>
+          <span>heh</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
