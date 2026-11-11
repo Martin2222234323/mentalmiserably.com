@@ -13,12 +13,13 @@
       justify-content: space-between;
       align-items: center;
       padding: 10px 20px;
+      flex-wrap: nowrap; /* Evita que los elementos bajen a la fuerza */
     }
     .header-left { display: flex; align-items: center; gap: 15px; }
     .header-left img.logo-icon { height: 50px; display: block; }
     .header-left img.avatar { height: 60px; }
     
-    .header-right { display: flex; align-items: center; gap: 12px; }
+    .header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
     .lang-selector {
       font-size: 13px;
       font-weight: bold;
@@ -27,15 +28,14 @@
       display: flex;
       align-items: center;
       gap: 6px;
+      white-space: nowrap;
     }
     .lang-selector a {
       color: #0055ff;
       text-decoration: underline;
     }
-    .header-right img { height: 70px; }
+    .header-right img { height: 60px; display: block; } /* Ajustado para que no rompa la barra */
     
-    .subtext { font-size: 10px; color: #555; }
-
     .container { display: flex; padding: 20px; gap: 20px; }
 
     nav { display: flex; flex-direction: column; gap: 15px; width: 120px; }
@@ -127,4 +127,17 @@
 
       <div class="social-box">
         <a href="https://www.youtube.com/@echotophat" target="_blank" class="social-btn youtube">youtube</a>
-        <a href="
+        <a href="https://www.tiktok.com/@echotophat" target="_blank" class="social-btn tiktok">tiktok</a>
+        <a href="https://discord.gg/tDxdAJMf8R" target="_blank" class="social-btn discord">discord</a>
+        <a href="blog.html" class="social-btn blog">blog</a>
+
+        <div class="footer-text">
+          <span>im a tuff guy</span>
+          <span>heh</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
