@@ -17,7 +17,23 @@
     .header-left { display: flex; align-items: center; gap: 15px; }
     .header-left img.logo-icon { height: 50px; display: block; }
     .header-left img.avatar { height: 60px; }
+    
+    .header-right { display: flex; align-items: center; gap: 12px; }
+    .lang-selector {
+      font-size: 13px;
+      font-weight: bold;
+      font-style: italic;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .lang-selector a {
+      color: #0055ff;
+      text-decoration: underline;
+    }
     .header-right img { height: 70px; }
+    
     .subtext { font-size: 10px; color: #555; }
 
     .container { display: flex; padding: 20px; gap: 20px; }
@@ -63,10 +79,6 @@
     .discord { background: #3000ff; }
     .blog    { background: #ff6600; }
 
-    .counter-box {
-      margin-top: 5px;
-    }
-
     .footer-text {
       display: flex;
       justify-content: space-between;
@@ -85,7 +97,12 @@
         <div class="subtext">.com</div>
       </div>
     </div>
+    
     <div class="header-right">
+      <div class="lang-selector">
+        <span>seleccionar idioma:</span>
+        <a href="en/index.html">English</a>
+      </div>
       <img src="images/top-right.png" alt="spykingphone">
     </div>
   </header>
