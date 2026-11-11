@@ -15,9 +15,25 @@
       padding: 10px 20px;
     }
     .header-left { display: flex; align-items: center; gap: 15px; }
-    .header-left img { height: 60px; }
+    .header-left img.logo-icon { height: 50px; display: block; }
+    .header-left img.avatar { height: 60px; }
+    
+    .header-right { display: flex; align-items: center; gap: 12px; }
+    .lang-selector {
+      font-size: 13px;
+      font-weight: bold;
+      font-style: italic;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .lang-selector a {
+      color: #0055ff;
+      text-decoration: underline;
+    }
     .header-right img { height: 70px; }
-    .logo { font-size: 24px; font-weight: bold; line-height: 1; }
+    
     .subtext { font-size: 10px; color: #555; }
 
     .container { display: flex; padding: 20px; gap: 20px; }
@@ -73,13 +89,17 @@
 
   <header>
     <div class="header-left">
-      <img src="images/logo-left.png" alt="axel">
+      <img src="images/logo-left.png" alt="axel" class="avatar">
       <div>
-        <div class="logo">MENTAL<br>MISERABLY</div>
+        <img src="images/mentalmiserablyicon.png" alt="MENTAL MISERABLY" class="logo-icon">
         <div class="subtext">.com</div>
       </div>
     </div>
     <div class="header-right">
+      <div class="lang-selector">
+        <span>seleccionar idioma:</span>
+        <a href="en/about.html">English</a>
+      </div>
       <img src="images/top-right.png" alt="spykingphone">
     </div>
   </header>
