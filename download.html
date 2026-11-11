@@ -15,9 +15,9 @@
       padding: 10px 20px;
     }
     .header-left { display: flex; align-items: center; gap: 15px; }
-    .header-left img { height: 60px; }
+    .header-left img.logo-icon { height: 50px; display: block; }
+    .header-left img.avatar { height: 60px; }
     .header-right img { height: 70px; }
-    .logo { font-size: 24px; font-weight: bold; line-height: 1; }
     .subtext { font-size: 10px; color: #555; }
 
     .container { display: flex; padding: 20px; gap: 20px; }
@@ -37,7 +37,6 @@
 
     .content { width: 65%; display: flex; flex-direction: column; gap: 20px; }
     
-    /* containers and stuff idk */
     .download-buttons { display: flex; flex-direction: column; gap: 12px; max-width: 280px; margin-top: 5px; }
     .btn-r2 {
       display: flex;
@@ -57,6 +56,7 @@
     .btn-apk { background: #aa00aa; } 
 
     .requirements { font-size: 13px; color: #444; margin-top: 5px; line-height: 1.4; }
+    .version-box { font-size: 13px; font-weight: bold; color: #333; }
 
     .social-box {
       width: 30%;
@@ -94,9 +94,9 @@
 
   <header>
     <div class="header-left">
-      <img src="images/logo-left.png" alt="axel">
+      <img src="images/logo-left.png" alt="axel" class="avatar">
       <div>
-        <div class="logo">MENTAL<br>MISERABLY</div>
+        <img src="images/mentalmiserablyicon.png" alt="MENTAL MISERABLY" class="logo-icon">
         <div class="subtext">.com</div>
       </div>
     </div>
@@ -127,10 +127,9 @@
           <p>• system requirements (PC): Windows 10/11</p>
           <p>• system requirements (Mobile): Android 8.0 or higher</p>
         </div>
-      </div>
-      
-        <div class="Newest Version">
-          <p> 0.1.1 </p>
+        
+        <div class="version-box">
+          <p>version: 0.1.1</p>
         </div>
       </div>
 
