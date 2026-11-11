@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>MENTAL MISERABLY - Galería</title>
+  <script src="router.js"></script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
     body { background-color: #00e5ff; }
@@ -12,7 +13,7 @@
     .header-left img.avatar { height: 60px; }
     .header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
     .lang-selector { font-size: 13px; font-weight: bold; font-style: italic; color: #333; display: flex; align-items: center; gap: 6px; white-space: nowrap; }
-    .lang-selector a { color: #0055ff; text-decoration: underline; }
+    .lang-selector a { color: #0055ff; text-decoration: underline; cursor: pointer; }
     .header-right img { height: 60px; display: block; }
     .container { display: flex; padding: 20px; gap: 20px; }
     nav { display: flex; flex-direction: column; gap: 15px; width: 120px; }
@@ -38,7 +39,7 @@
     <div class="header-right">
       <div class="lang-selector">
         <span>seleccionar idioma:</span>
-        <a href="en/gallery.html">English</a>
+        <a href="en/gallery.html" onclick="localStorage.setItem('mental_lang', 'en')">English</a>
       </div>
       <img src="images/top-right.png" alt="spykingphone">
     </div>
